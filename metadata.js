@@ -38,26 +38,26 @@ module.exports = {
   ],
   "controller": {
     "default": [
-      ["src/controller/index.tpl.js", "src/[moduleName]/controller/[name].js"],
-      ["src/logic/index.js", "src/[moduleName]/logic/[name].js"]
+      ["src/controller/index.tpl.js", "src/[moduleName]/controller/[action].js"],
+      ["src/logic/index.js", "src/[moduleName]/logic/[action].js"]
     ],
     "rest": [
       ["src/controller/rest.js", "src/[moduleName]/controller/rest.js"],
-      ["src/controller/restIndex.tpl.js", "src/[moduleName]/controller/[name].js"],
-      ["src/logic/index.js", "src/[moduleName]/logic/[name].js"]
+      ["src/controller/restIndex.tpl.js", "src/[moduleName]/controller/[action].js"],
+      ["src/logic/index.js", "src/[moduleName]/logic/[action].js"]
     ]
   },
   "model": [
-    ["src/model/index.js", "src/[moduleName]/model/[name].js"]
+    ["src/model/index.js", "src/[moduleName]/model/[action].js"]
   ],
   "service": [
-    ["src/service/index.js", "src/[moduleName]/service/[name].js"]
+    ["src/service/index.js", "src/[moduleName]/service/[action].js"]
   ],
   "middleware": [
-    ["src/middleware/base.js", "src/[moduleName]/middleware/[name].js"]
+    ["src/middleware/base.js", "src/[moduleName]/middleware/[action].js"]
   ],
   "adapter": [
-    ["src/adapter/base.js", "src/[moduleName]/adapter/[type]/[name].js"]
+    ["src/adapter/base.js", "src/[moduleName]/adapter/[type]/[action].js"]
   ],
   "module": [
     ["src/config/config.js", "src/[moduleName]/config/config.js"],
