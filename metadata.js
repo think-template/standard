@@ -7,17 +7,17 @@ module.exports = {
     "description": {
       "type": "string",
       "message": "Project description",
-      "default": "A Speike project"
+      "default": "application created by thinkjs"
     },
     "author": {
       "type": "string",
       "message": "Author"
+    },
+    "babel": {
+      "type": "confirm",
+      "message": "Do you want to turn on babel?"
     }
   },
-  "skipCompile": [
-    "src/**/*.vue",
-    "src/assets/*.png"
-  ],
   "new": {
     "default": [
       ["src/bootstrap", "src/bootstrap"],
@@ -85,5 +85,6 @@ module.exports = {
     ["src/logic/index.js", "src/[moduleName]/logic/index.js"],
     ["src/model/index.js", "src/[moduleName]/model/index.js"],
     ["view/index_index.html", "view/[moduleName]/index_index.html"]
-  ]
+  ],
+  "completeMessage": "To get started:\n\n<% if (!inPlace) { %># enter path\n$ cd <%= destDirName %>\n\n<% } %># install dependencies:\n$ npm install\n\n# run the app\n$ npm start"
 }
