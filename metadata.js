@@ -57,12 +57,12 @@ module.exports = {
   },
   "controller": {
     "default": [
-      ["src/controller/index.tpl.js", "src/[moduleName]/controller/[action].js"],
+      ["src/controller/index.js", "src/[moduleName]/controller/[action].js"],
       ["src/logic/index.js", "src/[moduleName]/logic/[action].js"]
     ],
     "rest": [
       ["src/controller/rest.js", "src/[moduleName]/controller/rest.js"],
-      ["src/controller/restIndex.tpl.js", "src/[moduleName]/controller/[action].js"],
+      ["src/controller/restIndex.js", "src/[moduleName]/controller/[action].js"],
       ["src/logic/index.js", "src/[moduleName]/logic/[action].js"]
     ]
   },
