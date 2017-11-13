@@ -45,6 +45,7 @@ module.exports = {
       ["src/controller/index.js", "src/[moduleName]/controller/index.js"],
       ["src/logic", "src/[moduleName]/logic"],
       ["src/model", "src/[moduleName]/model"],
+      ["test/index.js", "test/index.js"],
       ["view/index_index.html", "view/[moduleName]/index_index.html"],
       ["development.js", "development.js"],
       ["eslintrc", ".eslintrc"],
