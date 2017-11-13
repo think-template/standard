@@ -5,6 +5,7 @@
   "author": "<%- author %>",
   "scripts": {
     "start": "node development.js<% if (babel) { %>",
+    "test": "THINK_UNIT_TEST=1 nyc ava test/ && nyc report --reporter=html",
     "compile": "babel --no-babelrc src/ --presets think-node --out-dir app/<% } %>",
     "lint": "eslint src/",
     "lint-fix": "eslint --fix src/"
@@ -29,7 +30,9 @@
     "think-babel": "^1.0.3",
     "<% } %>think-watcher": "^3.0.0",
     "eslint": "^4.2.0",
-    "eslint-config-think": "^1.0.0"
+    "eslint-config-think": "^1.0.0",
+    "ava": "^0.18.0",
+    "nyc": "^7.0.0"
   },
   "repository": "",
   "license": "MIT",
