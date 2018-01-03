@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "author": "<%- author %>",
   "scripts": {
-    "start": "node development.js<% if (babel) { %>",
-    "test": "THINK_UNIT_TEST=1 nyc ava test/ && nyc report --reporter=html",
+    "start": "node development.js",
+    "test": "THINK_UNIT_TEST=1 nyc ava test/ && nyc report --reporter=html<% if (babel) { %>",
     "compile": "babel --no-babelrc src/ --presets think-node --out-dir app/<% } %>",
     "lint": "eslint src/",
     "lint-fix": "eslint --fix src/"
