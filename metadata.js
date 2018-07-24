@@ -15,7 +15,8 @@ module.exports = {
     },
     "babel": {
       "type": "confirm",
-      "message": "Do you want to turn on babel?"
+      "message": "Do you want to turn on babel?",
+      "default": false
     }
   },
   "new": {
